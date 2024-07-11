@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMAT</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        :root{
+            --primary-color: #000000;
+            --bg-color: #FFFFFF;
+        }
+        @font-face{
+            font-family: 'PlusJakartaSans';
+            src: url('res/font/PlusJakartaSans-Medium.woff') format('woff');
+            font-weight: normal;
+        }
+        @font-face{
+            font-family: 'PlusJakartaSans';
+            src: url('res/font/PlusJakartaSans-Bold.woff') format('woff');
+            font-weight: bold;
+        }
+        body{
+            background-color: var(--bg-color);
+
+            font-family: 'PlusJakartaSans', sans-serif;
+            font-weight: normal;
+            color: var(--primary-color);
+
+            overflow-x: hidden;
+        }
+        #logo{
+            padding: 15px 0;
+        }
+        .logo-img{
+            height: 50px;
+        }
+        .logo-right{
+            float: right;
+        }
+        #home .about{
+            padding: 5px 0 0;
+            margin-top: 15px;
+
+            border-top: 1px solid var(--primary-color);
+
+            font-size: 23px;
+            line-height: 28px;
+        }
+        .section-title{
+            display: block;
+            padding: 5px 0 7px;
+            margin-top: 70px;
+            
+            border-top: 1px solid var(--primary-color);
+            
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 28px;
+        }
+        .items{
+            margin-bottom: 15px;
+        }
+        .item-head{
+            padding: 5px 0 3px;
+
+            border-top: 1px solid var(--primary-color);
+            border-bottom: 1px solid var(--primary-color);
+        }
+        .item-head h2{
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .item-head p{
+            margin: 0;
+            font-size: 15px;
+        }
+        .carousel-container{
+            margin: 15px 0 10px;
+        }
+        .carousel-item > img{
+            width: 100%;
+            height: 525px;
+            object-fit: cover;
+            object-position: center center;
+        }
+        #other{
+            margin-top: 75px;
+        }
+        .other-head{
+            padding: 5px 0;
+
+            border-top: 1px solid var(--primary-color);
+            border-bottom: 1px solid var(--primary-color);
+
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 28px;
+        }
+        .other-img{
+            margin: 15px 0;
+        }
+        .other-img > img{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center center;
+        }
+        #footer{
+            padding: 20px 0 50px;
+            margin-top: 75px;
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+
+            font-size: 11px;
+        }
+        #footer a{
+            color: var(--bg-color);
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            
+        }
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 991px) {
+            
+        }
+        /* Mobile */
+        @media (max-width: 767px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img class="logo-img logo-left" src="res/img/logo_form.png" />
+                </div>
+                <div class="col">
+                    <img class="logo-img logo-right" src="res/img/logo_at.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME -->
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="banner img-fluid" src="res/img/banner.gif" />
+                    <div class="about">
+                        <p>Metal-based spatial solutions, focusing on functionality with long-lasting quality. Durability, versatility and timeless
+                        design are in the DNA of FORMAT. Our products are built to last and endlessly adapt. We believe that spaces where
+                        people gather should be defined by their ideas, not their walls, so we make product that can help people build a life,
+                        create a dream, realise a vision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <span class="section-title">Projects</span>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>Oaken x Newsroom at Brightspot</h2>
+                        <p>Installation - 2024</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-1" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/projects/oaken_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/oaken_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/oaken_3.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/oaken_4.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-1" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-1" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>ARCH:ID</h2>
+                        <p>Installation - 2024</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-2" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/projects/arch_id_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/arch_id_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/arch_id_3.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/arch_id_4.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-2" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-2" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>Smiljan</h2>
+                        <p>Store Display - 2024</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-3" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/projects/smiljan_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/smiljan_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/smiljan_3.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/smiljan_4.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-3" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-3" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>Newsroom at Art Jakarta</h2>
+                        <p>Coffee Booth - 2023</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-4" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/projects/newsroom_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/newsroom_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/newsroom_3.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/newsroom_4.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-4" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-4" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>Jakarta Illustration and Creative Arts Fair</h2>
+                        <p>Installation - 2023</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-5" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/projects/jicaf_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/jicaf_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/jicaf_3.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/jicaf_4.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-5" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-5" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>Bintaro Design District</h2>
+                        <p>Installation - 2023</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-6" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/projects/bdd_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/bdd_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/bdd_3.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/projects/bdd_4.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-6" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-6" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <span class="section-title">Products</span>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>FRMT.C.01.24</h2>
+                        <p>Credenza - 2024</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-7" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/products/credenza_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/credenza_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/credenza_3.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-7" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-7" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>FRMT.RC.01.24</h2>
+                        <p>Rolling Cabinet - 2024</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-8" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/products/rolling_cabinet_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/rolling_cabinet_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/rolling_cabinet_3.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-8" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-8" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>FRMT.SC.01.24</h2>
+                        <p>Stair Cabinet - 2024</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-9" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/products/stair_cabinet_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/stair_cabinet_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/stair_cabinet_3.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-9" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-9" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>FRMT.CT.01.23</h2>
+                        <p>Coffee Table - 2023</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-10" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/products/coffee_table_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/coffee_table_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/coffee_table_3.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-10" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-10" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items col-4">
+                    <div class="item-head">
+                        <h2>FRMT.LB.01.24</h2>
+                        <p>Bench - 2024</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div id="c-11" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="res/img/products/bench_1.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/bench_2.jpg" class="d-block w-100" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="res/img/products/bench_3.jpg" class="d-block w-100" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#c-11" data-bs-slide="prev">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#c-11" data-bs-slide="next">
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="other">
+        <div class="container">
+            <div class="row">
+                <div class="other col-4">
+                    <div class="other-head">Service</div>
+                    <div class="other-img">
+                        <img class="img-fluid" src="res/img/home_service.jpg" />
+                    </div>
+                    <div class="other-desc">
+                        <p>
+                            FORMAT operates in two distinct roles. As a Production
+                            Practice studio, it provides a comprehensive range
+                            of spatial solutions, addressing specific design
+                            challenges through conceptualizing, designing,
+                            and implementing solutions to optimize both
+                            functionality and aesthetics for clients' needs.
+                        </p>
+                        <p>
+                            Additionally, FORMAT serves as a brand developing
+                            unit products produced in limited quantities.
+                            This approach enhances personalization for its audience,
+                            offering distinctive, high-quality pieces tailored
+                            for individual spaces.
+                        </p>
+                    </div>
+                </div>
+                <div class="other col-4">
+                    <div class="other-head">Product</div>
+                    <div class="other-img">
+                        <img class="img-fluid" src="res/img/home_product.jpg" />
+                    </div>
+                    <div class="other-desc">
+                        <p>
+                            FORMAT focuses on developing products using
+                            a modular system to address space-related issues,
+                            offering significant potential for future development.
+                            This concept allows for various activations
+                            and flexibilities to be implemented effectively.
+                        </p>
+                        <p>
+                            Additionally, FORMAT produces limited-quantity unit
+                            products, leveraging advanced tools, human resources,
+                            and robust manufacturing processes. This approach
+                            aims to create products that integrate carefully curated
+                            programs and a distinctive design concept
+                            characterized by strong aesthetics.
+                        </p>
+                    </div>
+                </div>
+                <div class="other col-4">
+                    <div class="other-head">Material</div>
+                    <div class="other-img">
+                        <img class="img-fluid" src="res/img/home_material.jpg" />
+                    </div>
+                    <div class="other-desc">
+                        <p>
+                            FORMAT uses high-quality metal known for its durability
+                            and lasting quality in producing its products. This material
+                            ensures that FORMAT's offerings are strong and resilient,
+                            capable of enduring daily use effectively.
+                        </p>
+                        <p>
+                            The use of metal results in products with clean lines
+                            and timeless designs, making them versatile options
+                            for various needs. This aesthetic appeal, combined
+                            with metal's durability, guarantees that FORMAT's
+                            offerings maintain their relevance and functionality
+                            across different settings and applications, standing
+                            the test of time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <span>
+                        Made by FORMAT.<br/>
+                        <a href="https://albaunggulmetal.co.id" target="_blank">Powered by Alba Unggul Metal</a>
+                    </span>
+                </div>
+                <div class="col">
+                    <span>Metal-based spatial solutions, focusing on functionality with long-lasting quality. Designed and made in Indonesia.</span>
+                </div>
+                <div class="col">
+                    <a href="mailto:info@byformat.id">Further information info@byformat.id</a><br/>
+                    <a href="https://www.instagram.com/madebyformat.id/" target="_blank">Instagram @madebyformat.id</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            
+        });
+    </script>
+
+</body>
+</html>
