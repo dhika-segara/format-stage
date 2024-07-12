@@ -101,6 +101,12 @@
             object-fit: cover;
             object-position: center center;
         }
+        .carousel-item > .img-left{
+            object-position: 15% center;
+        }
+        .carousel-item > .img-bottom{
+            object-position: center bottom;
+        }
         #other{
             margin-top: 75px;
         }
@@ -145,6 +151,9 @@
                 object-fit: contain;
                 background-color: var(--primary-color);
             }
+            .footer-link{
+                margin-bottom: 10px;
+            }
         }
         /* Tablet */
         @media (min-width: 768px) and (max-width: 991px) {
@@ -159,6 +168,9 @@
             }
             .mid-footer{
                 margin-bottom: 15px;
+            }
+            .footer-link{
+                margin-bottom: 10px;
             }
         }
         /* Mobile */
@@ -282,7 +294,7 @@
                                     <img src="res/img/projects/oaken_3.jpg" class="d-block w-100" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="res/img/projects/oaken_4.jpg" class="d-block w-100" />
+                                    <img src="res/img/projects/oaken_4.jpg" class="img-left d-block w-100" />
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#c-1" data-bs-slide="prev">
@@ -336,7 +348,7 @@
                                     <img src="res/img/projects/smiljan_1.jpg" class="d-block w-100" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="res/img/projects/smiljan_2.jpg" class="d-block w-100" />
+                                    <img src="res/img/projects/smiljan_2.jpg" class="img-bottom d-block w-100" />
                                 </div>
                                 <div class="carousel-item">
                                     <img src="res/img/projects/smiljan_3.jpg" class="d-block w-100" />
@@ -674,13 +686,13 @@
     <div id="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-5">
+                <div class="col-lg-4 col-sm-6 col-5">
                     <span>
                         Made by FORMAT.<br/>
                         <a class="footer-alba" href="https://albaunggulmetal.co.id" target="_blank">Powered by Alba Unggul Metal</a>
                     </span>
                 </div>
-                <div class="col-lg-8 col-7">
+                <div class="col-lg-8 col-sm-6 col-7">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-6 col-12 mid-footer">
