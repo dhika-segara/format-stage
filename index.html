@@ -35,7 +35,7 @@
             font-family: 'PlusJakartaSans', sans-serif;
             font-weight: normal;
             color: var(--primary-color);
-            letter-spacing: -1px;
+            letter-spacing: -0.5px;
 
             overflow-x: hidden;
         }
@@ -47,6 +47,9 @@
         }
         .logo-right{
             float: right;
+        }
+        .banner{
+            width: 100%;
         }
         #home .about{
             padding: 5px 0 0;
@@ -91,7 +94,7 @@
         }
         .carousel-item > img{
             width: 100%;
-            height: 525px;
+            height: 45vw;
             object-fit: cover;
             object-position: center center;
         }
@@ -116,7 +119,7 @@
         }
         .other-img > img{
             width: 100%;
-            height: 500px;
+            height: 33vw;
             object-fit: cover;
             object-position: center center;
         }
@@ -140,7 +143,46 @@
         }
         /* Mobile */
         @media (max-width: 767px) {
-            
+            .logo-img{
+                height: 30px;
+            }
+            #home .about{
+                font-size: 15px;
+                line-height: 19px;
+            }
+            .section-title{
+                padding: 0;
+                font-size: 18px;
+            }
+            .item-head h2{
+                font-size: 12px;
+            }
+            .item-head p{
+                font-size: 12px;
+            }
+            .carousel-container{
+                margin: 5px 0 0;
+            }
+            .carousel-item > img{
+                height: 250px;
+            }
+            .other{
+                margin-bottom: 15px;
+            }
+            .other-head{
+                padding: 0;
+                font-size: 18px;
+            }
+            .other-img{
+                margin: 5px 0 10px;
+            }
+            .other-img > img{
+                height: 325px;
+            }
+            .other-desc{
+                font-size: 15px;
+                line-height: 19px;
+            }
         }
     </style>
 </head>
@@ -163,7 +205,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <img class="banner img-fluid" src="res/img/banner.gif" />
+                    <img class="banner img-fluid d-none d-sm-block" src="res/img/banner.gif" />
+                    <img class="banner-mobile img-fluid	d-block d-sm-none" src="res/img/banner-mobile.gif" />
                     <div class="about">
                         <p>Metal-based spatial solutions, focusing on functionality with long-lasting quality. Durability, versatility and timeless
                         design are in the DNA of FORMAT. Our products are built to last and endlessly adapt. We believe that spaces where
@@ -181,7 +224,7 @@
                 <div class="col-12">
                     <span class="section-title">Projects</span>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>Oaken x Newsroom at Brightspot</h2>
                         <p>Installation - 2024</p>
@@ -211,7 +254,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>ARCH:ID</h2>
                         <p>Installation - 2024</p>
@@ -241,7 +284,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>Smiljan</h2>
                         <p>Store Display - 2024</p>
@@ -271,7 +314,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>Newsroom at Art Jakarta</h2>
                         <p>Coffee Booth - 2023</p>
@@ -301,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>Jakarta Illustration and Creative Arts Fair</h2>
                         <p>Installation - 2023</p>
@@ -331,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>Bintaro Design District</h2>
                         <p>Installation - 2023</p>
@@ -371,7 +414,7 @@
                 <div class="col-12">
                     <span class="section-title">Products</span>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>FRMT.C.01.24</h2>
                         <p>Credenza - 2024</p>
@@ -398,7 +441,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>FRMT.RC.01.24</h2>
                         <p>Rolling Cabinet - 2024</p>
@@ -425,7 +468,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>FRMT.SC.01.24</h2>
                         <p>Stair Cabinet - 2024</p>
@@ -452,7 +495,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>FRMT.CT.01.23</h2>
                         <p>Coffee Table - 2023</p>
@@ -479,7 +522,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="items col-4">
+                <div class="items col-sm-4 col-6">
                     <div class="item-head">
                         <h2>FRMT.LB.01.24</h2>
                         <p>Bench - 2024</p>
@@ -513,7 +556,7 @@
     <div id="other">
         <div class="container-fluid">
             <div class="row gx-2">
-                <div class="other col-4">
+                <div class="other col-sm-4 col-12">
                     <div class="other-head">Service</div>
                     <div class="other-img">
                         <img class="img-fluid" src="res/img/home_service.jpg" />
@@ -536,7 +579,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="other col-4">
+                <div class="other col-sm-4 col-12">
                     <div class="other-head">Product</div>
                     <div class="other-img">
                         <img class="img-fluid" src="res/img/home_product.jpg" />
@@ -559,7 +602,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="other col-4">
+                <div class="other col-sm-4 col-12">
                     <div class="other-head">Material</div>
                     <div class="other-img">
                         <img class="img-fluid" src="res/img/home_material.jpg" />
