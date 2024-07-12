@@ -137,8 +137,14 @@
         #footer a{
             color: var(--bg-color);
         }
-        @media (min-width: 992px) and (max-width: 1199px) {
-            
+        .footer-link{
+            display: block;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
+            .banner{
+                object-fit: contain;
+                background-color: var(--primary-color);
+            }
         }
         /* Tablet */
         @media (min-width: 768px) and (max-width: 991px) {
@@ -177,9 +183,6 @@
             .item-head h2{
                 font-size: 12px;
             }
-            .item-head .balancer{
-                margin-bottom: 15px;
-            }
             .item-head p{
                 font-size: 12px;
             }
@@ -206,15 +209,19 @@
                 font-size: 15px;
                 line-height: 19px;
             }
+            #footer{
+                font-size: 10px;
+            }
             .mid-footer{
                 margin-bottom: 15px;
+            }
+            .footer-link{
+                margin-bottom: 10px;
             }
         }
         /* Mobile XS */
         @media (max-width: 387px) {
-            .item-head .balancer-xs{
-                margin-bottom: 15px;
-            }
+            
         }
     </style>
 </head>
@@ -258,7 +265,8 @@
                 </div>
                 <div class="items col-lg-4 col-6">
                     <div class="item-head">
-                        <h2>Oaken x Newsroom at Brightspot</h2>
+                        <h2 class="d-none d-sm-block">Oaken x Newsroom at Brightspot</h2>
+                        <h2 class="d-block d-sm-none">Brightspot</h2>
                         <p>Installation - 2024</p>
                     </div>
                     <div class="carousel-container">
@@ -288,7 +296,7 @@
                 </div>
                 <div class="items col-lg-4 col-6">
                     <div class="item-head">
-                        <h2 class="balancer-xs">ARCH:ID</h2>
+                        <h2>ARCH:ID</h2>
                         <p>Installation - 2024</p>
                     </div>
                     <div class="carousel-container">
@@ -378,7 +386,8 @@
                 </div>
                 <div class="items col-lg-4 col-6">
                     <div class="item-head">
-                        <h2>Jakarta Illustration and Creative Arts Fair</h2>
+                        <h2 class="d-none d-sm-block">Jakarta Illustration and Creative Arts Fair</h2>
+                        <h2 class="d-block d-sm-none">JICAF</h2>
                         <p>Installation - 2023</p>
                     </div>
                     <div class="carousel-container">
@@ -408,7 +417,7 @@
                 </div>
                 <div class="items col-lg-4 col-6">
                     <div class="item-head">
-                        <h2 class="balancer">Bintaro Design District</h2>
+                        <h2>Bintaro Design District</h2>
                         <p>Installation - 2023</p>
                     </div>
                     <div class="carousel-container">
@@ -668,18 +677,19 @@
                 <div class="col-lg-4 col-5">
                     <span>
                         Made by FORMAT.<br/>
-                        <a href="https://albaunggulmetal.co.id" target="_blank">Powered by Alba Unggul Metal</a>
+                        <a class="footer-alba" href="https://albaunggulmetal.co.id" target="_blank">Powered by Alba Unggul Metal</a>
                     </span>
                 </div>
                 <div class="col-lg-8 col-7">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-6 col-12 mid-footer">
-                                <span>Metal-based spatial solutions, focusing on functionality<br>with long-lasting quality. Designed and made in Indonesia.</span>
+                                <span class="d-none d-sm-block">Metal-based spatial solutions, focusing on functionality<br/>with long-lasting quality. Designed and made in Indonesia.</span>
+                                <span class="d-block d-sm-none">Metal-based spatial solutions, focusing on functionality with long-lasting quality. Designed and made in Indonesia.</span>
                             </div>
                             <div class="col-lg-6 col-12">
-                                <a href="mailto:info@byformat.id">Further information info@byformat.id</a><br/>
-                                <a href="https://www.instagram.com/madebyformat.id/" target="_blank">Instagram @madebyformat.id</a>
+                                <a class="footer-link" href="mailto:info@byformat.id">Further information info@byformat.id</a>
+                                <a class="footer-link" href="https://www.instagram.com/madebyformat.id/" target="_blank">Instagram @madebyformat.id</a>
                             </div>
                         </div>
                     </div>
